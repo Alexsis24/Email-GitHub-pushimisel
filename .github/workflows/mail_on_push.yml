@@ -9,9 +9,9 @@ jobs:
         uses: dawidd6/action-send-mail@v3
       - with:
         server_address: smtp.gmail.com
-        server_port:465
-        username:${{secrets.MAIL_USERNAME}}
-        password:${{secrets.MAIL_PASSWORD}}
+        server_port: 465
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
         subject: mail on push again
         body: this email has been sent because ${{github.repository}} has been pushed. The pusher is ${{github.event.pusher.name}} with ${{github.event.head_commit.message}}.
         to: kristjan.kivikangur@tthk.ee
