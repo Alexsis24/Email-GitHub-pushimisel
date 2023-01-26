@@ -16,4 +16,3 @@ jobs:
         body: this email has been sent because ${{github.repository}} has been pushed. The pusher is ${{github.event.pusher.name}} with ${{github.event.head_commit.message}}.
         to: kristjan.kivikangur@tthk.ee
         from: Github actions
-      
